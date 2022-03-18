@@ -2,6 +2,8 @@
     display: flex;
     height: 100vh;
     gap: 25px;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
 }
 
 [class ^="box-"] {
