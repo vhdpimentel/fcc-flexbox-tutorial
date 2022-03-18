@@ -1,5 +1,7 @@
 .container {
+    display: flex;
     height: 100vh;
+    gap: 25px;
 }
 
 [class ^="box-"] {
@@ -10,4 +12,8 @@
 
     /* for better readability */
     font-size: 65px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
