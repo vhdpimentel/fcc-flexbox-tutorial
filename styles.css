@@ -1,14 +1,15 @@
 .container {
     display: flex;
+    flex-flow: column wrap;
+    border: 2px solid black;
     height: 100vh;
     gap: 25px;
-    flex-direction: row-reverse;
-    justify-content: space-evenly;
+    place-content: space-between flex-end;
 }
 
 [class ^="box-"] {
-    width: 140px;
-    height: 140px;
+    width: 300px;
+    height: 400px;
     background-color: skyblue;
     border: 2px solid black;
 
@@ -19,3 +20,16 @@
     justify-content: center;
     align-items: center;
 }
+
+.box-1{
+    flex: 0 1 0;
+}
+
+.box-2{
+    flex: 0 3 auto;
+}
+
+.box-3{
+    flex: 0 1 auto;
+}
+
